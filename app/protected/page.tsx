@@ -33,6 +33,16 @@ export default async function ProtectedPage() {
         <h2 className="font-bold text-2xl mb-4">Next steps</h2>
         <FetchDataSteps />
       </div>
+      <ul>
+        <li>Vercel Environment: {process.env.VERCEL_ENV}</li>
+        <li>VERCEL_URL: {process.env.VERCEL_URL}</li>
+        <li>
+          VERCEL_PROJECT_PRODUCTION_URL:{" "}
+          {process.env.VERCEL_PROJECT_PRODUCTION_URL}
+        </li>
+        <li>VERCEL_BRANCH_URL: {process.env.VERCEL_BRANCH_URL}</li>
+        <li>VERCEL_GIT_COMMIT_REF: {process.env.VERCEL_GIT_COMMIT_REF}</li>
+      </ul>
     </div>
   );
 }

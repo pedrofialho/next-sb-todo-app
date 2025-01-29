@@ -67,6 +67,7 @@ export default function RootLayout({
                   </a>
                 </p>
                 <ThemeSwitcher />
+                <p>env: {process.env.VERCEL_ENV ?? 'local'}</p>
               </footer>
             </div>
           </main>
